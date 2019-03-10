@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans');
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+  padding: 1rem;
+}
+
+/* Svart färg #323838 */
+body {
+  overflow-x: hidden;
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.navbar {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.2rem;
+  /* Ändra till en grön färg */
+  background-color: #065244;
+}
+
+.navbar-brand>img {
+  height: 6rem;
+}
+
+.navbar-nav li {
+  padding-right: .7rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  padding-top: 0.1rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: black;
+}
+
+.home-inner {
+  background-image: url(img/banner4.jpg);
+}
+
+.firstHeading {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 45%;
+  z-index: 1;
+  color: white;
+  text-transform: uppercase;
+}
+
+.firstHeading h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+.firstHeading h3 {
+  font-size: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+.btn-lg {
+  border-width: medium;
+  border-radius: 0;
+  padding: 0.5rem 1.2rem;
+  font-size: 1.2rem;
+}
+
+.btn-lg:hover {
+  color: #065244;
+}
+
+.display-4 {
+  padding-top: 1rem;
+}
+
+.gallery-footer {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem:
+}
+
+.jumbotron {
+  border-radius: 0;
+  padding: 1rem 0 1rem;
+  background-color: white;
+}
+
+h3.heading {
+  font-size: 1.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+}
+
+.heading-underline {
+  width: 7rem;
+  height: 0.2rem;
+  background-color: #065244;
+  margin: 0 auto 1rem;
+}
+
+.gallery img {
+  max-width: 100%;
+  transition: transform .5s ease;
+}
+
+.row.gallery-padding [class*=col-] {
+  padding: 0.5rem;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+  cursor: zoom-in;
+}
+
+/* Fixar att bilderna flyter utanför galleriet */
+.gallery {
+  overflow: hidden;
+}
+
+.center {
+  width: 75%;
+  margin: 1.5rem auto;
+  padding-top: 2rem;
+}
+
+h3.middleHeading {
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.information svg.svg-inline--fa {
+  color: #065244
+}
+
+.information h4 {
+  font-size: 1.6rem;
+  padding-bottom: 0.4rem;
+}
+
+.information p {
+  font-size: 1rem;
+}
+
+.information-open p {
+  line-height: 0.9rem;
+}
+
+.information-open svg.svg-inline--fa {
+  color: #065244
+}
+
+footer {
+  padding: 2rem 0 2rem;
+  margin-top: 1rem;
+}
+
+footer svg.svg-inline--fa {
+  font-size: 1.8rem;
+  margin: 1.2rem 0.8rem 0 0;
+}
+
+#instagram {
+  color: #F77737;
+}
+
+footer svg.svg-inline--fa:hover {
+  color: #065244 !important;
+}
+
+/*---Media Queries --*/
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {}
