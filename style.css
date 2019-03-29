@@ -1,22 +1,39 @@
-@import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans');
+/* google fonts */
+@import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 
 /*--- Bootstrap Padding Fix --*/
 [class*="col-"] {
   padding: 1rem;
 }
 
+/* #2F97C1 snygg blå färg */
 /* Svart färg #323838 */
+/* #26547C; en till snygg blå färg */
+/* FFD166 snygg gul färg */
+/* #FFC15E gul färg */
+/* #5FA8D3 blå färg */
+/* #1B4965 blå färg */
+/* röd färg BF4342 */
+/* mörk färg 373F47 */
+/* Overflox-x hidden gör så att allt innehåll stannar inom webbläsarens fönster, så de inte flyter utanför fönstret */
 body {
   overflow-x: hidden;
   font-family: 'Quattrocento Sans', sans-serif;
 }
 
+p {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1rem;
+}
+
+/*------------- Välkomstsidan -------------*/
+/* Navigationen */
 .navbar {
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 0.9rem;
+  font-weight: 7 00;
+  font-size: 1rem;
   letter-spacing: 0.2rem;
-  /* Ändra till en grön färg */
   background-color: #065244;
 }
 
@@ -25,21 +42,30 @@ body {
 }
 
 .navbar-nav li {
-  padding-right: .7rem;
+  padding-right: 0.7rem;
+}
+
+.navbar-nav li>a {
+  padding: 0.9rem;
 }
 
 .navbar-light .navbar-nav .nav-link {
-  padding-top: 0.1rem;
+  padding-top: 0.3rem;
+  color: white;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-  color: black;
+  color: #272727;
 }
 
+/* Bakgrundsbilden för headern */
 .home-inner {
   background-image: url(img/banner4.jpg);
 }
 
+/* Välkomsttexten. width 100% / max-width 100% gör så att innehållet går utanför fönstret */
+/* position absolute används här för att innehållet ska placeras på en viss position på sidan. */
+/* med hjälp av top: 45% så sätts innehållet 45%. z-index: 1; gör att texten alltid kommer framför bilden */
 .firstHeading {
   width: 100%;
   max-width: 100%;
@@ -50,40 +76,87 @@ body {
   text-transform: uppercase;
 }
 
+/* Välkomst h1 */
 .firstHeading h1 {
   font-size: 2.8rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
+  text-shadow: 0.2rem 0.5rem 1rem #272727;
 }
 
 .firstHeading h3 {
   font-size: 2rem;
   padding-bottom: 1.5rem;
+  text-shadow: 0.2rem 0.5rem 1rem #272727;
 }
 
+/* Knappen för välkomstsectionen */
 .btn-lg {
   border-width: medium;
   border-radius: 0;
   padding: 0.5rem 1.2rem;
   font-size: 1.2rem;
+  color: #065244;
+  background-color: white;
 }
 
 .btn-lg:hover {
-  color: #065244;
+  color: white;
+  background-color: #065244;
 }
 
+/* secondHeading h3 */
 .display-4 {
   padding-top: 1rem;
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  padding-bottom: 0.2rem;
+  color: white;
 }
 
+/* stylad p-tag  */
+.lead {
+  color: white;
+  letter-spacing: 0.1rem;
+  padding-bottom: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.secondHeading {
+  background-color: #065244;
+}
+
+/* Footer för galleri med ledtext */
 .gallery-footer {
   width: 75%;
   margin: 0 auto;
-  padding-top: 2rem:
+  padding-top: 2rem;
 }
 
+#gallerylead {
+  color: #272727;
+}
+
+/* cardsen med bilderna på framsidan, med height: auto; så att innehållet justeras så de visas korrekt */
+.card img {
+  max-width: 100%;
+  transition: transform .5s ease;
+  height: auto;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+  cursor: zoom-in;
+}
+
+.card {
+  border: none;
+}
+
+/* jumbotron klassen för information sektionen */
 .jumbotron {
   border-radius: 0;
   padding: 1rem 0 1rem;
@@ -97,18 +170,29 @@ h3.heading {
   padding-bottom: 0.5rem;
 }
 
+/* Grönt streck som finns under de flesta h elementen*/
 .heading-underline {
-  width: 7rem;
+  width: 10rem;
   height: 0.2rem;
   background-color: #065244;
   margin: 0 auto 1rem;
 }
 
+.firstheading-underline {
+  width: 10rem;
+  height: 0.2rem;
+  background-color: black;
+  margin: 0 auto 1rem;
+}
+
+/* bilderna på galleri sidan */
 .gallery img {
   max-width: 100%;
+  height: auto;
   transition: transform .5s ease;
 }
 
+/* padding fix för galleriet */
 .row.gallery-padding [class*=col-] {
   padding: 0.5rem;
 }
@@ -123,25 +207,40 @@ h3.heading {
   overflow: hidden;
 }
 
+/* Om mig sektionen */
 .center {
   width: 75%;
   margin: 1.5rem auto;
   padding-top: 2rem;
 }
 
+/* h3 styling för om mig och information sektionen */
 h3.middleHeading {
   font-size: 1.9rem;
   font-weight: 700;
   text-transform: uppercase;
 }
 
+/* Om mig  */
+article {
+  background-color: #272727;
+}
+
+article, h3>p {
+  color: white;
+}
+
+/* font-awesome ikoner */
+/*------------- Informations-sektionen -------------*/
 .information svg.svg-inline--fa {
   color: #065244
 }
 
+/* h4 element styling  */
 .information h4 {
   font-size: 1.6rem;
   padding-bottom: 0.4rem;
+  margin-top: 0.8rem;
 }
 
 .information p {
@@ -152,13 +251,22 @@ h3.middleHeading {
   line-height: 0.9rem;
 }
 
+.information-open h4 {
+  margin-top: 0.8rem;
+}
+
 .information-open svg.svg-inline--fa {
-  color: #065244
+  color: #065244;
 }
 
 footer {
   padding: 2rem 0 2rem;
   margin-top: 1rem;
+  background-color: #272727;
+}
+
+footer, h3>p {
+  color: white;
 }
 
 footer svg.svg-inline--fa {
@@ -170,8 +278,33 @@ footer svg.svg-inline--fa {
   color: #F77737;
 }
 
+/*  */
 footer svg.svg-inline--fa:hover {
   color: #065244 !important;
+}
+
+.contactform {
+  background-color: #272727;
+}
+
+label {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.btn-info {
+  background-color: white;
+  color: black;
+  border: none;
+  border-width: medium;
+  border-radius: 0;
+  padding: 0.5rem 1.2rem;
+  font-size: 1.2rem;
+}
+
+.btn-info:hover {
+  background-color: #065244;
+  color: white;
 }
 
 /*---Media Queries --*/
@@ -179,4 +312,33 @@ footer svg.svg-inline--fa:hover {
 
 @media (max-width: 768px) {}
 
-@media (max-width: 576px) {}
+/* minskar storleken och padding på h1, h3, och btn-lg vid mindre skärmar */
+@media (max-width: 577px) {
+  .firstHeading h1 {
+    font-size: 2.7rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .firstHeading h3 {
+    font-size: 1.7rem;
+    padding-bottom: 1.2rem;
+  }
+
+  .btn-lg {
+    padding: 0.3rem 1rem;
+    font-size: 1rem;
+  }
+
+  .display-4 {
+    font-size: 2.5rem;
+  }
+
+  .card {
+    max-width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+}
