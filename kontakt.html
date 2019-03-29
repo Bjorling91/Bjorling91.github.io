@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hos Ellen</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"></script>
+    <!-- <link rel="stylesheet" href="kontakt.css"> -->
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/fixed.css">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-light bg sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="img/loggawhite.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTop">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTop">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Hem</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="omMig.html">Om mig</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galleri.html">Galleri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kontakt.html">Kontakt / Boka</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="contact-wrapper">
+      <div class="container-fluid">
+        <div class="col-12 text-center">
+          <h3 class="heading">Kontakta mig</h3>
+          <div class="heading-underline"></div>
+          <h4>Underrubrik</h4>
+          <div >
+            <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis voluptas consequatur dicta consectetur dolorem, sed unde expedita fugiat quasi voluptatibus.</p>
+          </div>
+        </div>
+      </div>
+      <!-- <section class="container"> <div class="wrapper"> <div class="contact-info"> <h3>Hos Ellen</h3> <ul> <li>Brunnsgatan </li> <li>070-5717121</li> <li>email@email.com</li> </ul> <div class="contact"> <h3>Kontakta oss</h3> <form class=""> <p>
+      <label>Namn</label> <input type="text" name="namn"> </p> <p> <label>E-post</label> <input type="email" name="email"> </p> <p> <label>Telefon</label> <input type="text" name="tel"> </p> <p> <label>Klippning</label> <input type="text" name="val"> </p>
+      <p> <label>Meddelande</label> <textarea name="meddelande" rows="5"></textarea> </p> <p> <button type="button" name="button">Skicka</button> </p> </form> </div> </div> </div> </section> <div class="heading-underline"></div> -->
+      <!-- <section class="container-fluid padding"> <form> <div class="form-group row"> <label for="Namn" class="col-sm-2 col-form-label">Namn</label> <div class="col-sm-10"> <input type="name" class="form-control" id="inputEmail3" placeholder="Namn">
+      </div> </div> <div class="form-group row"> <label for="inputEpost" class="col-sm-2 col-form-label">E-post</label> <div class="col-sm-10"> <input type="email" class="form-control" id="inputPassword3" placeholder="E-post"> </div> </div> <div
+      class="form-group row"> <label for="inputTel" class="col-sm-2 col-form-label">Telefon</label> <div class="col-sm-10"> <input type="tel" class="form-control" id="inputPassword3" placeholder="Telefonnummer"> </div> </div> </section> -->
+      <!-- Default form contact -->
+      <div class="container-fluid">
+        <section class="contactform">
+          <form class="text-center border border-light p-5">
+            <!-- Namn -->
+            <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Namn">
+            <!-- Email -->
+            <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-post">
+            <!-- Tel -->
+            <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Telefon">
+            <!-- Subject -->
+            <label>Välj en kategori som passar dig</label>
+            <select class="browser-default custom-select mb-4">
+              <option value="" disabled="disabled">Välj ett alternatic</option>
+              <option value="1" selected="selected">Typ av behandling (valfri)</option>
+              <option value="2">Klippning</option>
+              <option value="3">Klipp & färg/sling</option>
+              <option value="4">Övriga behandlingar / Uppsättning</option>
+            </select>
+            <!-- Message -->
+            <div class="form-group">
+              <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Meddelande"></textarea>
+            </div>
+            <!-- Copy -->
+            <div class="custom-control custom-checkbox mb-4">
+              <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+              <label class="custom-control-label" for="defaultContactFormCopy">Godkänn vilkor</label>
+            </div>
+            <!-- Send button -->
+            <button class="btn btn-info btn-block" type="submit">Skicka</button>
+          </form>
+        </section>
+      </div>
+    </section>
+    <!-- Default form contact -->
+    <footer>
+      <div class="container-fluid padding">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <img src="img/loggawhite.png" alt="" height="96" width="96">
+          </div>
+          <div class="col-md-12">
+            <hr class="light">
+            <p>070-5717121</p>
+            <p>Email@email.com</p>
+            <p>Brunnsgatan 12</p>
+            <p>Västervik 59330</p>
+            <a href="https://www.facebook.com/Hos-Ellen-221240911575320/" target="_blank">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+            <a id="instagram" href="https://www.instagram.com/hos.ellen/" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+          <div class="col-12">
+            <hr class="light">
+            <h5>&copy;HosEllen</h5>
+          </div>
+        </div>
+      </div>
+    </footer>
