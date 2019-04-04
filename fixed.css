@@ -9,9 +9,8 @@
   margin-right: 0px !important;
 }
 
-/*--- Gör så att scrollen känns smidigare och att navbaren inte hoppar --*/
 /*--- Fixed välkomstsektion, gör så att Bakgrundsbilden, välkomsttexten, och allt innehåll stannar på sin relative och absolute position  --*/
-/* ladning klassen är själva boxen av välkomstsektionen medan home-wrap klassen är wrappern för hela sektionen, därför sätter jag position: relative på .landing.
+/* landing klassen är själva boxen av välkomstsektionen medan home-wrap klassen är wrappern för hela sektionen, därför sätter jag position: relative på .landing.
 z-index: -1 gör så att allt på .landing klassen hamnar bakom .firstHeading klassen som har z-index: 1 så att den klassen hamnar framför .landing
    */
 .landing {
@@ -32,7 +31,7 @@ z-index: -1 gör så att allt på .landing klassen hamnar bakom .firstHeading kl
   height: 100%;
 }
 
-/* gör så att bakgrundsbilden på völkomstsectionen blir fixed, alltså att .home-inner klassen stannar på samma ställe även när man skrollar.
+/* gör så att bakgrundsbilden på völkomstsectionen blir fixed, alltså att .home-inner klassen stannar på samma ställe även när man scrollar.
 ser även till att de fungerar på de flesta webbläsare med -webkit-transform
 med background-size: cover gör så att bilden inte delar sig.
  */
