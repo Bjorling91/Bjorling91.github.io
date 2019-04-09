@@ -17,12 +17,14 @@
 /* röd färg BF4342 */
 /* mörk färg 373F47 */
 /* Overflox-x hidden gör så att allt innehåll stannar inom webbläsarens fönster, så de inte flyter utanför fönstret */
-/* html, body {
+html {
   width: auto !important;
-  overflow-x: hidden !important;
-} */
+  overflow-x: hidden;
+}
+
 body {
   -webkit-overflow-scrolling: touch;
+  overflow-x: hidden !important;
   font-family: 'Quattrocento Sans', sans-serif;
 }
 

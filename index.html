@@ -258,9 +258,10 @@
 			// loggan kommer in från vänster av sidan med en duration på 2s. distance innebär att den kommer in 150px utanför skärmen.
 			window.sr = ScrollReveal();
 			sr.reveal('.navbar-brand', {
-				duration: 2000,
+				delay: 500,
+				duration: 900,
 				origin: 'left',
-				distance: '150px'
+				distance: '200px'
 			});
 			// hamburgaremnyn tonar fram under 3s
 			sr.reveal('.navbar-toggler', {duration: 3000});
@@ -269,14 +270,16 @@
 				duration: 3000,
 				delay: 500,
 				origin: 'top',
-				distance: '200px'
+				distance: '200px',
+				mobile: true
 			});
 			// knappen under välkomsttexten animeras under 2s 200px underifrån dess ursprungliga position och tillbaka
 			sr.reveal('#firstHeadingBtn', {
 				duration: 2000,
-				delay: 500,
+				delay: 900,
 				origin: 'bottom',
-				distance: '200px'
+				distance: '300px',
+				mobile: true
 			});
 			// viewFactor innebär att animationen triggas när 40% av elementen syns
 			sr.reveal('.information-open', {
