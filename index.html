@@ -76,7 +76,7 @@
 					<div class="col-md-4">
 						<div class="information-open">
 							<i class="far fa-clock fa-3x"></i>
-							<h4>Öppetider</h4>
+							<h3>Öppetider</h3>
 							<p>Måndag 9:00-18:00</p>
 							<p>Tisdag 9:00-20:00</p>
 							<p>Onsdag 9:00-20:00</p>
@@ -89,7 +89,7 @@
 					<div class="col-md-4">
 						<div id="contact" class="information">
 							<i class="fas fa-phone fa-3x"></i>
-							<h4>Kontakta mig</h4>
+							<h3>Kontakta mig</h3>
 							<p>Du kan nå mig på 070-5717121 eller boka en tid här på hemsidan
 							</p>
 							<a class="btn btn-outline-dark btn-lg" href="kontakt.html">Boka tid</a>
@@ -98,8 +98,8 @@
 					<div class="col-md-4">
 						<div id="location" class="information">
 							<i class="fas fa-map fa-3x"></i>
-							<h4>Jag finns på Brunnsgatan 12
-							</h4>
+							<h3>Jag finns på Brunnsgatan 12
+							</h3>
 							<!-- Validatorn gillar inte att man använder bootstraps responsive class här, men de funkar ändå. -->
 							<div class="embed-responsive embed-responsive-16by9">
 								<iframe
@@ -253,25 +253,25 @@
 			// loggan kommer in från vänster av sidan med en duration på 2s. distance innebär att den kommer in 150px utanför skärmen.
 			window.sr = ScrollReveal();
 			sr.reveal('.navbar-brand', {
-				delay: 800,
-				duration: 1000,
+				delay: 200,
+				duration: 1200,
 				origin: 'left',
 				distance: '200px'
 			});
 			// hamburgaremnyn tonar fram under 3s
-			sr.reveal('.navbar-toggler', {delay: 700});
+			sr.reveal('.navbar-toggler', {delay: 200});
 			// välkomsttexten animeras under 3s den animeras uppifrån 200px från dess ursprungliga position tillbaka där den ska vara,
 			sr.reveal('.firstHeading', {
-				duration: 1000,
-				delay: 800,
+				duration: 1200,
+				delay: 200,
 				origin: 'top',
 				distance: '200px',
 				mobile: true
 			});
 			// knappen under välkomsttexten animeras under 2s 200px underifrån dess ursprungliga position och tillbaka
 			sr.reveal('#firstHeadingBtn', {
-				duration: 1000,
-				delay: 800,
+				duration: 1200,
+				delay: 200,
 				origin: 'bottom',
 				distance: '300px',
 				mobile: true

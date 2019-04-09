@@ -17,6 +17,7 @@
 /* röd färg BF4342 */
 /* mörk färg 373F47 */
 /* Overflox-x hidden gör så att allt innehåll stannar inom webbläsarens fönster, så de inte flyter utanför fönstret */
+/* Var tvungen att lägga overflow:hidden på html elementet så att fönstret stanna inom ramen på mobiler */
 html {
   width: auto !important;
   overflow-x: hidden;
@@ -34,7 +35,7 @@ p {
 }
 
 /*------------- Välkomstsidan -------------*/
-/* Navigationen */
+/* Navigationen. Jag la position fixed på navbaren så att den hänger med när man scrollar.  */
 .navbar {
   text-transform: uppercase;
   font-weight: 700;
@@ -153,6 +154,10 @@ p {
   color: #272727;
 }
 
+#gallery {
+  margin-top: 130px;
+}
+
 /* cardsen med bilderna på framsidan, med height: auto; så att elementet justerar sin höjd så de visas korrekt
 en liten animation med en 0.5s ease efter man har hoverat på bilden så animeras den tillbaka lite finare
  */
@@ -246,6 +251,10 @@ article, h3>p {
   color: white;
 }
 
+.aboutMe {
+  margin-top: 130px;
+}
+
 /* font-awesome ikoner */
 /*------------- Informations-sektionen -------------*/
 .information svg.svg-inline--fa {
@@ -300,6 +309,10 @@ footer svg.svg-inline--fa:hover {
 }
 
 /* Kontakt formuläret */
+.contact-wrapper {
+  margin-top: 130px;
+}
+
 .contactform {
   background-color: #272727;
 }
