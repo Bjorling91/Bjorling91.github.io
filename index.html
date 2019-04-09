@@ -141,11 +141,6 @@
 				</div>
 			</div>
 		</article>
-		<div class="container-fluid padding">
-			<div class="row text-center padding">
-				<hr class="my-4">
-			</div>
-		</div>
 		<!-- Cards / litet galleri med senaste bilder -->
 		<section id="latest">
 			<h3 class="heading text-center">Senaste klippningar & produkter</h3>
@@ -258,25 +253,25 @@
 			// loggan kommer in från vänster av sidan med en duration på 2s. distance innebär att den kommer in 150px utanför skärmen.
 			window.sr = ScrollReveal();
 			sr.reveal('.navbar-brand', {
-				delay: 500,
-				duration: 900,
+				delay: 800,
+				duration: 1000,
 				origin: 'left',
 				distance: '200px'
 			});
 			// hamburgaremnyn tonar fram under 3s
-			sr.reveal('.navbar-toggler', {duration: 3000});
+			sr.reveal('.navbar-toggler', {delay: 700});
 			// välkomsttexten animeras under 3s den animeras uppifrån 200px från dess ursprungliga position tillbaka där den ska vara,
 			sr.reveal('.firstHeading', {
-				duration: 3000,
-				delay: 500,
+				duration: 1000,
+				delay: 800,
 				origin: 'top',
 				distance: '200px',
 				mobile: true
 			});
 			// knappen under välkomsttexten animeras under 2s 200px underifrån dess ursprungliga position och tillbaka
 			sr.reveal('#firstHeadingBtn', {
-				duration: 2000,
-				delay: 900,
+				duration: 1000,
+				delay: 800,
 				origin: 'bottom',
 				distance: '300px',
 				mobile: true
@@ -286,19 +281,19 @@
 				duration: 2000,
 				origin: 'left',
 				distance: '200px',
-				viewFactor: 0.4
+				viewFactor: 0.2
 			});
 			sr.reveal('#contact', {
 				duration: 2000,
 				origin: 'right',
 				distance: '200px',
-				viewFactor: 0.4
+				viewFactor: 0.2
 			});
 			sr.reveal('#location', {
 				duration: 2000,
 				origin: 'bottom',
 				distance: '200px',
-				viewFactor: 0.4
+				viewFactor: 0.2
 			});
 			// easing med cubic-bezier gör att animationen får att den slängs in och sen slängs tillbaka
 			sr.reveal('#aboutimg', {
@@ -307,7 +302,7 @@
 				distance: '200px',
 				duration: '1000',
 				scale: 0.5,
-				viewFactor: 0.5
+				viewFactor: 0.4
 			});
 			sr.reveal('#abouttext', {
 				easing: 'cubic-bezier(0.3, 2, 1, 1)',

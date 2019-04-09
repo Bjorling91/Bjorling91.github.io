@@ -41,6 +41,8 @@ p {
   font-size: 1rem;
   letter-spacing: 0.2rem;
   background-color: #065244;
+  position: fixed;
+  width: 100%;
 }
 
 /* Höjden på loggan i läge med navbaren */
